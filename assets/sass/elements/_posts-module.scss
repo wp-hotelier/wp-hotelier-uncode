@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+>>> POSTS MODULE
+----------------------------------------------------------------
+*/
+
+.room__price--loop {
+	letter-spacing: 0;
+	font-weight: 600;
+	display: block;
+}
+
+.t-entry-title .room__price--loop {
+	display: inline;
+
+	&:before {
+		content: "\002D";
+		display: inline-block;
+		padding: 0 .325em;
+	}
+}
+
+.tmb-light.tmb {
+	.room__price--loop,
+	.t-entry-room-details span {
+		color: #303133;
+	}
+
+	.t-entry-visual {
+		.room__price--loop,
+		.t-entry-room-details span {
+			color: #fff;
+		}
+	}
+}
+
+.tmb-dark.tmb {
+	.room__price--loop,
+	.t-entry-room-details span {
+		color: #fff;
+	}
+
+	.t-entry-visual {
+		.room__price--loop,
+		.t-entry-room-details span {
+			color: #303133;
+		}
+	}
+}
+
+.t-entry-room-details {
+	font-weight: 600;
+
+	span {
+		margin-right: 13px;
+	}
+	.fa {
+		margin-right: 4px;
+	}
+
+	.fa-bed,
+	.fa-info-circle {
+		position: relative;
+		top: 1px;
+	}
+}

@@ -1,0 +1,546 @@
+# Copyright (C) 2021 WP Hotelier
+# This file is distributed under the same license as the WP Hotelier package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Hotelier\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: WP Hotelier <support@wphotelier.com>\n"
+"Report-Msgid-Bugs-To: https://github.com/wp-hotelier/wp-hotelier-uncode\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../hotelier-uncode.php:60, ../hotelier-uncode.php:67
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: ../includes/core-functions.php:71
+msgid "Add New %s"
+msgstr ""
+
+#: ../includes/core-functions.php:72
+msgid "Edit %s"
+msgstr ""
+
+#: ../includes/core-functions.php:73
+msgid "New %s"
+msgstr ""
+
+#: ../includes/core-functions.php:74, ../includes/core-functions.php:75
+msgid "All %s"
+msgstr ""
+
+#: ../includes/core-functions.php:76
+msgid "Search %s"
+msgstr ""
+
+#: ../includes/core-functions.php:77
+msgid "No %s found"
+msgstr ""
+
+#: ../includes/core-functions.php:78
+msgid "No %s found in Trash"
+msgstr ""
+
+#: ../includes/hotelier-hooks.php:33
+msgid "Address 2 (optional)"
+msgstr ""
+
+#: ../includes/page-options.php:25, ../includes/theme-options.php:28
+msgid "Show Room Details"
+msgstr ""
+
+#: ../includes/page-options.php:26
+msgid "Override to show the Room Details in the content area."
+msgstr ""
+
+#: ../includes/page-options.php:32, ../includes/page-options.php:54
+msgid "Inherit"
+msgstr ""
+
+#: ../includes/page-options.php:36, ../includes/page-options.php:58
+msgid "Yes"
+msgstr ""
+
+#: ../includes/page-options.php:40, ../includes/page-options.php:62
+msgid "No"
+msgstr ""
+
+#: ../includes/page-options.php:47, ../includes/theme-options.php:37
+msgid "Show Room Rates"
+msgstr ""
+
+#: ../includes/page-options.php:48
+msgid "Override to show the Room Rates in variable rooms."
+msgstr ""
+
+#: ../includes/page-options.php:105, ../includes/theme-options.php:83
+msgid "After Content (Related Rooms)"
+msgstr ""
+
+#: ../includes/theme-options.php:29
+msgid "Activate to show the Room Details in the content area."
+msgstr ""
+
+#: ../includes/theme-options.php:38
+msgid "Activate to show the Room Rates in variable rooms."
+msgstr ""
+
+#: ../includes/theme-options.php:93
+msgid "Room CPT"
+msgstr ""
+
+#: ../includes/theme-options.php:101
+msgid "Room CPT singular label"
+msgstr ""
+
+#: ../includes/theme-options.php:102
+msgid "Enter a custom Room Post Type singular label."
+msgstr ""
+
+#: ../includes/theme-options.php:110
+msgid "Room CPT plural label"
+msgstr ""
+
+#: ../includes/theme-options.php:111
+msgid "Enter a custom Room Post Type plural label."
+msgstr ""
+
+#: ../includes/theme-options.php:119
+msgid "Room CPT slug"
+msgstr ""
+
+#: ../includes/theme-options.php:120
+msgid "Enter a custom Room Post Type slug."
+msgstr ""
+
+#: ../includes/theme-options.php:128
+msgid "Room Category slug"
+msgstr ""
+
+#: ../includes/theme-options.php:129
+msgid "Enter a custom Room Category slug."
+msgstr ""
+
+#: ../includes/vc/functions.php:21
+msgid "Room price"
+msgstr ""
+
+#: ../includes/vc/functions.php:25
+msgid "Full price"
+msgstr ""
+
+#: ../includes/vc/functions.php:29
+msgid "No text"
+msgstr ""
+
+#: ../includes/vc/functions.php:35
+msgid "Default layout"
+msgstr ""
+
+#: ../includes/vc/functions.php:39
+msgid "Inline price"
+msgstr ""
+
+#: ../includes/vc/functions.php:47
+msgid "Room details"
+msgstr ""
+
+#: ../includes/vc/functions.php:51
+msgid "Show adults"
+msgstr ""
+
+#: ../includes/vc/functions.php:55
+msgid "Show adults (with icon)"
+msgstr ""
+
+#: ../includes/vc/functions.php:59
+msgid "Hide adults"
+msgstr ""
+
+#: ../includes/vc/functions.php:65
+msgid "Show children"
+msgstr ""
+
+#: ../includes/vc/functions.php:69
+msgid "Show children (with icon)"
+msgstr ""
+
+#: ../includes/vc/functions.php:73
+msgid "Hide children"
+msgstr ""
+
+#: ../includes/vc/functions.php:79
+msgid "Show bed size"
+msgstr ""
+
+#: ../includes/vc/functions.php:83
+msgid "Show bed size (with icon)"
+msgstr ""
+
+#: ../includes/vc/functions.php:87
+msgid "Hide bed size"
+msgstr ""
+
+#: ../includes/vc/functions.php:93
+msgid "Show room size"
+msgstr ""
+
+#: ../includes/vc/functions.php:97
+msgid "Show room size (with icon)"
+msgstr ""
+
+#: ../includes/vc/functions.php:101
+msgid "Hide room size"
+msgstr ""
+
+#: ../includes/vc/functions.php:147
+msgid "%s Adult"
+msgid_plural "%s Adults"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../includes/vc/functions.php:164
+msgid "%s Children"
+msgstr ""
+
+#: ../includes/vc/booking/booking-output.php:312
+msgid "Card Holder Name (required) "
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:13
+msgid "Compact layout"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:15
+msgid "Activate this to activate the compact layout."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:32
+msgid "Show thumbnails"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:34
+msgid "Activate this to show room thumbnails."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:46, ../includes/vc/listing/listing.php:161
+msgid "Buttons color"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:48, ../includes/vc/listing/listing.php:163
+msgid "Specify button color."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:50, ../includes/vc/booking/booking.php:62, ../includes/vc/booking/booking.php:72, ../includes/vc/booking/booking.php:81, ../includes/vc/booking/booking.php:94, ../includes/vc/booking/booking.php:106, ../includes/vc/booking/booking.php:136
+msgid "Buttons & Forms"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:54, ../includes/vc/listing/listing.php:169
+msgid "Buttons hover effect"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:56, ../includes/vc/datepicker/datepicker.php:65, ../includes/vc/listing/listing.php:68, ../includes/vc/listing/listing.php:171
+msgid "Specify an effect on hover state."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:66, ../includes/vc/datepicker/datepicker.php:74, ../includes/vc/listing/listing.php:78, ../includes/vc/listing/listing.php:181
+msgid "Buttons Custom Typography"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:68, ../includes/vc/datepicker/datepicker.php:76, ../includes/vc/listing/listing.php:80, ../includes/vc/listing/listing.php:183
+msgid "Define custom font settings."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:77, ../includes/vc/datepicker/datepicker.php:84, ../includes/vc/listing/listing.php:89, ../includes/vc/listing/listing.php:192
+msgid "Font family"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:78, ../includes/vc/listing/listing.php:193
+msgid "Specify the buttons font family."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:90, ../includes/vc/datepicker/datepicker.php:96, ../includes/vc/listing/listing.php:102, ../includes/vc/listing/listing.php:205
+msgid "Font weight"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:91, ../includes/vc/listing/listing.php:206
+msgid "Specify the buttons font weight."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:103, ../includes/vc/datepicker/datepicker.php:108, ../includes/vc/listing/listing.php:115, ../includes/vc/listing/listing.php:218
+msgid "Text transform"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:104, ../includes/vc/listing/listing.php:219
+msgid "Specify the buttons text transform."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:110, ../includes/vc/datepicker/datepicker.php:114, ../includes/vc/listing/listing.php:122, ../includes/vc/listing/listing.php:225
+msgid "Initial"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:114, ../includes/vc/datepicker/datepicker.php:118, ../includes/vc/listing/listing.php:126, ../includes/vc/listing/listing.php:229
+msgid "Uppercase"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:118, ../includes/vc/datepicker/datepicker.php:122, ../includes/vc/listing/listing.php:130, ../includes/vc/listing/listing.php:233
+msgid "Lowercase"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:122, ../includes/vc/datepicker/datepicker.php:126, ../includes/vc/listing/listing.php:134, ../includes/vc/listing/listing.php:237
+msgid "Capitalize"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:133, ../includes/vc/datepicker/datepicker.php:137, ../includes/vc/listing/listing.php:145, ../includes/vc/listing/listing.php:248
+msgid "Letter spacing"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:134, ../includes/vc/datepicker/datepicker.php:138, ../includes/vc/listing/listing.php:146, ../includes/vc/listing/listing.php:249
+msgid "Specify the letter spacing value."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:151, ../includes/vc/datepicker/datepicker.php:150, ../includes/vc/listing/listing.php:320, ../includes/vc/room-details/room-details.php:140, ../includes/vc/room-rates/room-rates.php:66
+msgid "Element ID"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:153, ../includes/vc/datepicker/datepicker.php:152, ../includes/vc/listing/listing.php:322, ../includes/vc/room-details/room-details.php:142, ../includes/vc/room-rates/room-rates.php:68
+msgid "This value has to be unique. Change it in case it's needed."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:154, ../includes/vc/booking/booking.php:162, ../includes/vc/datepicker/datepicker.php:153, ../includes/vc/datepicker/datepicker.php:161, ../includes/vc/listing/listing.php:323, ../includes/vc/listing/listing.php:331, ../includes/vc/room-details/room-details.php:143, ../includes/vc/room-details/room-details.php:151, ../includes/vc/room-rates/room-rates.php:69, ../includes/vc/room-rates/room-rates.php:76
+msgid "Extra"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:159, ../includes/vc/datepicker/datepicker.php:158, ../includes/vc/listing/listing.php:328, ../includes/vc/room-details/room-details.php:148, ../includes/vc/room-rates/room-rates.php:73
+msgid "Extra class name"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:161, ../includes/vc/datepicker/datepicker.php:160, ../includes/vc/listing/listing.php:330, ../includes/vc/room-details/room-details.php:150, ../includes/vc/room-rates/room-rates.php:75
+msgid "If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your CSS file."
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:167
+msgid "Booking"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:173, ../includes/vc/datepicker/datepicker.php:172, ../includes/vc/listing/listing.php:342, ../includes/vc/room-details/room-details.php:161, ../includes/vc/room-rates/room-rates.php:87
+msgid "WP Hotelier"
+msgstr ""
+
+#: ../includes/vc/booking/booking.php:175
+msgid "WP Hotelier Booking"
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:15, ../includes/vc/listing/listing.php:13
+msgid "Label"
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:17, ../includes/vc/listing/listing.php:15
+msgid "Optional datepicker label."
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:25, ../includes/vc/listing/listing.php:24
+msgid "Layout"
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:27, ../includes/vc/listing/listing.php:26
+msgid "Specify the datepicker layout."
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:35, ../includes/vc/listing/listing.php:35
+msgid "Dropdown skin"
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:37, ../includes/vc/listing/listing.php:37
+msgid "Specify the skin of the datepicker dropdown."
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:45, ../includes/vc/listing/listing.php:46
+msgid "Icon"
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:47, ../includes/vc/listing/listing.php:48
+msgid "Specify icon from library."
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:56, ../includes/vc/listing/listing.php:58
+msgid "Button color"
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:58, ../includes/vc/listing/listing.php:60
+msgid "Specify the color of the datepicker button."
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:63, ../includes/vc/listing/listing.php:66
+msgid "Button hover effect"
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:85, ../includes/vc/listing/listing.php:90
+msgid "Specify the button font family."
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:97, ../includes/vc/listing/listing.php:103
+msgid "Specify the button font weight."
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:109, ../includes/vc/listing/listing.php:116
+msgid "Specify the button text transform."
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:166, ../includes/vc/listing/listing.php:20, ../includes/vc/listing/listing.php:31, ../includes/vc/listing/listing.php:42, ../includes/vc/listing/listing.php:54, ../includes/vc/listing/listing.php:62, ../includes/vc/listing/listing.php:74, ../includes/vc/listing/listing.php:84, ../includes/vc/listing/listing.php:93, ../includes/vc/listing/listing.php:106, ../includes/vc/listing/listing.php:118, ../includes/vc/listing/listing.php:148
+msgid "Datepicker"
+msgstr ""
+
+#: ../includes/vc/datepicker/datepicker.php:174
+msgid "WP Hotelier Datepicker"
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:165, ../includes/vc/listing/listing.php:177, ../includes/vc/listing/listing.php:187, ../includes/vc/listing/listing.php:196, ../includes/vc/listing/listing.php:209, ../includes/vc/listing/listing.php:221, ../includes/vc/listing/listing.php:251
+msgid "Buttons"
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:264, ../includes/vc/room-rates/room-rates.php:14
+msgid "Remove border"
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:266, ../includes/vc/room-rates/room-rates.php:16
+msgid "Activate to remove the default border."
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:270, ../includes/vc/listing/listing.php:280, ../includes/vc/listing/listing.php:287, ../includes/vc/listing/listing.php:308, ../includes/vc/room-rates/room-rates.php:20, ../includes/vc/room-rates/room-rates.php:30, ../includes/vc/room-rates/room-rates.php:37, ../includes/vc/room-rates/room-rates.php:58
+msgid "Style"
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:274, ../includes/vc/room-rates/room-rates.php:24
+msgid "Shadow"
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:276, ../includes/vc/room-rates/room-rates.php:26
+msgid "Activate this for the shadow effect."
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:284, ../includes/vc/room-rates/room-rates.php:34
+msgid "Shadow type"
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:286, ../includes/vc/room-rates/room-rates.php:36
+msgid "Specify the shadow option preset."
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:302, ../includes/vc/room-rates/room-rates.php:52
+msgid "Shadow Darker"
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:304, ../includes/vc/room-rates/room-rates.php:54
+msgid "Activate this for the dark shadow effect."
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:336
+msgid "Listing"
+msgstr ""
+
+#: ../includes/vc/listing/listing.php:344
+msgid "WP Hotelier Listing"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:14
+msgid "Hide Room Price"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:16
+msgid "Activate to hide the room price."
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:20
+msgid "Room Price"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:24
+msgid "Hide Room Infos"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:26
+msgid "Activate to hide the room infos (deposit, additional inofs, etc)."
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:30
+msgid "Room Infos"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:34
+msgid "Hide Room Details"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:36
+msgid "Activate to hide the room details."
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:40, ../includes/vc/room-details/room-details.php:50, ../includes/vc/room-details/room-details.php:155
+msgid "Room Details"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:44, ../includes/vc/room-details/room-details.php:68, ../includes/vc/room-details/room-details.php:124
+msgid "Hide Title"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:46, ../includes/vc/room-details/room-details.php:70, ../includes/vc/room-details/room-details.php:126
+msgid "Activate to hide the default title."
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:58
+msgid "Hide Room Facilities"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:60
+msgid "Activate to hide the room facilities."
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:64, ../includes/vc/room-details/room-details.php:74, ../includes/vc/room-details/room-details.php:88, ../includes/vc/room-details/room-details.php:99
+msgid "Room Facilities"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:82
+msgid "Display as list"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:84
+msgid "Activate to display the Room Facilities as a list."
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:96
+msgid "Number of columns"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:98
+msgid "Select the number of columns."
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:114
+msgid "Hide Room Conditions"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:116
+msgid "Activate to hide the room conditions."
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:120, ../includes/vc/room-details/room-details.php:130
+msgid "Room Conditions"
+msgstr ""
+
+#: ../includes/vc/room-details/room-details.php:156
+msgid "WP Hotelier Room Details (Single Room)"
+msgstr ""
+
+#: ../includes/vc/room-rates/room-rates.php:81
+msgid "Room Rates"
+msgstr ""
+
+#: ../includes/vc/room-rates/room-rates.php:82
+msgid "WP Hotelier Room Rates (Single Room)"
+msgstr ""

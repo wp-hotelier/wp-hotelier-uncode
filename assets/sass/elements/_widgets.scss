@@ -1,0 +1,217 @@
+// Product search
+.widget-room-search {
+	position: relative;
+	font-size: .9em;
+
+	i {
+		position: absolute;
+		right: 1.35em;
+		bottom: 1em;
+		margin-top: -6px !important;
+	}
+
+	input[type="search"] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+// Products list
+.widget-rooms {
+	ul.widget-rooms__list {
+		list-style: none outside;
+		margin: 0;
+		padding: 0!important;
+
+		li {
+			padding: 9px 0px 9px 0px;
+			margin: 0;
+			list-style: none;
+			position: relative;
+
+			&:first-child {
+				padding-top: 0;
+			}
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			.widget-rooms__name {
+				display: block;
+				overflow: hidden;
+			}
+
+			.widget-rooms__price {
+				margin-left: 58px;
+				display: block;
+			}
+
+			img {
+				float: left;
+				width: 40px;
+				height: auto;
+				margin-right: 18px;
+				position: relative;
+				top: 6px;
+			}
+
+			ins {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// Rooms Filter
+.widget-rooms-filter {
+	span.widget-rooms-filter__group-label {
+		display: block;
+		text-transform: uppercase;
+		font-size: 12px;
+		margin-bottom: 18px;
+	}
+
+	.widget-rooms-filter__group-list {
+		margin-bottom: 27px;
+	}
+
+	.widget-rooms-filter__group:last-child .widget-rooms-filter__group-list {
+		margin-bottom: 0;
+	}
+
+	.widget-rooms-filter__group-item--chosen {
+		a {
+			text-decoration: none;
+			padding: 0 9px;
+			display: inline-block;
+			border: 1px solid;
+			border-radius: 3px;
+
+			&:before {
+				font-family: 'uncodeicon';
+				content: "\e117";
+				font-size: 9px;
+				position: relative;
+				top: -1px;
+				margin-right: 4px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+// Booking widget
+.widget-booking {
+	.widget-booking__date-block {
+		background-color: rgba(48, 49, 51, 0.05);
+		padding: 18px;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+	}
+
+	.widget-booking__date-label {
+		font-size: 11px;
+		display: block;
+		margin-bottom: 9px;
+		opacity: .4;
+		font-weight: 500;
+	}
+
+	.widget-booking__month-year,
+	.widget-booking__day-name {
+		font-size: 14px;
+		display: block;
+	}
+
+	.widget-booking__day {
+		font-size: 27px;
+		padding: 5px 0;
+		display: block;
+	}
+
+	.widget-booking__dates {
+		display: flex;
+	}
+
+	.widget-booking__date-block--checkout {
+		margin-top: 0;
+		margin-left: 9px;
+	}
+
+	.widget-booking__date-block--checkin,
+	.widget-booking__date-block--checkout {
+		width: 50%;
+	}
+
+	.widget-booking__date-block--checkin {
+		margin-right: 9px;
+	}
+
+	.widget-booking__rooms-list {
+		margin-top: 27px !important;
+		padding-top: 18px;
+		padding-bottom: 18px;
+	}
+
+	.widget-booking__room-item {
+		margin-bottom: 9px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.widget-booking__room-rate {
+		display: block;
+		margin-top: 0;
+	}
+
+	.widget-booking__cart-total {
+		margin-top: 18px;
+		display: block;
+
+		strong {
+			font-weight: 500;
+		}
+
+		.amount {
+			float: right;
+			margin: 0;
+		}
+	}
+
+	.widget-booking__change-cart {
+		text-align: right;
+		padding-bottom: 18px;
+		font-size: 12px;
+	}
+}
+
+.style-light,
+.style-dark .style-light {
+	.widget-booking {
+		.widget-booking__date-block {
+			background-color: rgba(48, 49, 51, 0.05);
+		}
+
+		.widget-booking__rooms-list {
+			border-top: 1px solid #eaeaea;
+			border-bottom: 1px solid #eaeaea;
+		}
+	}
+}
+
+.style-dark,
+.style-light .style-dark {
+	.widget-booking {
+		.widget-booking__date-block {
+			background-color: rgba(255, 255, 255, 0.05);
+		}
+
+		.widget-booking__rooms-list {
+			border-top: 1px solid rgba(255, 255, 255, 0.25);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+		}
+	}
+}

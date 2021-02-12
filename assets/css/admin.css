@@ -1,0 +1,79 @@
+/**
+ * WP Hotelier CSS for the Uncode theme (admin)
+ */
+.htl-ui-custom-datepicker.ui-datepicker {
+  margin: 0;
+  border-radius: 0;
+}
+
+.htl-ui-custom-datepicker .ui-datepicker-header {
+  background: #fff;
+  color: #444;
+  left: 0;
+  line-height: 1.4em;
+  top: 0;
+  width: auto;
+  border-radius: 0;
+}
+
+.htl-ui-custom-datepicker .ui-datepicker-header a {
+  color: #0073aa;
+}
+
+.htl-ui-custom-datepicker .ui-datepicker-prev,
+.htl-ui-custom-datepicker .ui-datepicker-next {
+  color: #0073aa;
+  font-family: inherit;
+  font-size: 13px;
+  height: auto;
+  text-align: left;
+  border-radius: 0;
+  border: none;
+  float: none;
+  display: block;
+}
+
+.htl-ui-custom-datepicker .ui-datepicker-prev:hover,
+.htl-ui-custom-datepicker .ui-datepicker-next:hover {
+  color: #0073aa;
+  background: transparent;
+}
+
+.htl-ui-custom-datepicker .ui-datepicker-prev:before,
+.htl-ui-custom-datepicker .ui-datepicker-next:before {
+  display: none;
+}
+
+.htl-ui-custom-datepicker table {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+.htl-ui-custom-datepicker thead {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.htl-ui-custom-datepicker tbody td {
+  border: none;
+}
+
+.htl-ui-custom-datepicker td span,
+.htl-ui-custom-datepicker td a {
+  width: auto;
+  height: auto;
+  line-height: inherit;
+}
+
+.htl-ui-custom-datepicker .ui-state-default {
+  background-color: transparent;
+}
+
+.htl-ui-custom-datepicker tr:last-child .ui-state-active {
+  height: auto;
+}
+
+.htl-ui-custom-datepicker .ui-datepicker-unselectable .ui-state-default,
+.htl-ui-custom-datepicker td.ui-state-disabled {
+  color: #e8e8e8 !important;
+}

@@ -1,0 +1,548 @@
+.form--booking,
+.form--pay-reservation {
+	h3 {
+		margin-top: 0;
+	}
+
+	.form-row--first,
+	.form-row--last {
+		margin-bottom: 18px;
+		margin-top: 18px;
+	}
+
+	.form-row {
+		@include clearfix();
+
+		label {
+			font-weight: 400;
+			line-height: 1;
+			margin-bottom: 15px;
+		}
+
+		select {
+			width: 100%;
+		}
+
+		.input-text {
+			width:100%;
+		}
+
+		abbr {
+			border-bottom: 0px dotted;
+			text-decoration: none;
+		}
+
+		.required {
+			color: #ff3100;
+			font-weight: 600;
+			border: 0;
+		}
+	}
+
+	@media (min-width: 570px) {
+		.form-row--first,
+		.form-row--last {
+			width: calc( 50% - 13px );
+			overflow: visible;
+		}
+
+		.form-row--first {
+			float: left;
+			clear: left;
+		}
+
+		.form-row--last {
+			float: right;
+			width: calc( 50% - 14px );
+		}
+
+		.form-row--wide {
+			clear: both;
+		}
+	}
+}
+
+.booking__section,
+.reservation-received__section {
+	@include clearfix();
+	margin-bottom: 54px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.uncode-htl-module--pay-page .booking__section--reservation-details {
+	margin-bottom: 54px;
+}
+
+#special_requests_field .form-row__description {
+	font-weight: 400;
+	margin-top: 9px;
+	display: block;
+	font-size: .9em;
+}
+
+.table--reservation-table,
+.table--guest-details {
+	border: 0;
+	border-top-width: 1px;
+	border-top-style: solid;
+
+	th,
+	td {
+		vertical-align: middle;
+		text-align: left;
+		font-weight: 400;
+		border-width: 0 0 1px 0;
+		padding: 27px 0px 27px 0px;
+	}
+
+	th {
+		color: #303133;
+	}
+
+	.amount {
+		color: #303133;
+	}
+
+	.form-row {
+		margin-top: 0;
+	}
+
+	.select {
+		display: inline;
+		width: auto !important;
+    	min-width: 80px;
+    	margin-left: 9px;
+	}
+}
+
+.section-header + .table--reservation-table,
+.section-header + .table--guest-details {
+	margin-top: 27px;
+}
+
+.reservation-table__room-qty {
+	width: 70px;
+	text-align: center !important;
+}
+
+.reservation-table__room-cost,
+.reservation-table__footer td {
+	text-align: right !important;
+}
+
+.reservation-table__room-link,
+.reservation-table__room-rate {
+	display: block;
+}
+
+.reservation-table__room-rate {
+	margin-top: 0;
+}
+
+.reservation-table__room-guests--booking {
+	margin-top: 18px;
+
+	.form-row {
+		display: table;
+		table-layout: fixed;
+	}
+
+	.form-row__label {
+		min-width: 108px;
+		display: table-cell;
+	}
+}
+
+.price-breakdown-wrapper {
+	border: 0;
+	padding: 0 !important;
+}
+
+.table--price-breakdown {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-collapse: separate;
+	margin: 0;
+	padding: 9px 0;
+	display: none;
+
+
+	th,
+	td {
+		border: 0;
+		padding-left: 18px;
+		padding-right: 18px;
+		font-size: .9em;
+		padding-bottom: 18px;
+		padding-top: 18px;
+	}
+
+	.price-breakdown__cost {
+		text-align: right !important;
+	}
+
+	th {
+		background-color: #303030;
+		padding-bottom: 9px !important;
+		padding-top: 9px !important;
+	}
+}
+
+.style-light,
+.style-dark .style-light {
+	.table--price-breakdown {
+		tr:nth-child(even) td {
+			background-color: rgba(#000, .03);
+		}
+	}
+}
+
+.style-dark,
+.style-light .style-dark {
+	.table--price-breakdown {
+		tr:nth-child(even) td {
+			background-color: rgba(#fff, .15);
+		}
+	}
+}
+
+.view-price-breakdown {
+	display: block;
+	margin-top: 9px;
+	font-size: 12px;
+}
+
+.reservation-table__room-remove {
+	margin-top: 18px !important;
+}
+
+.privacy-policy-text,
+.form-row--booking-terms {
+	margin-bottom: 36px;
+}
+
+.privacy-policy-text p {
+	margin-top: 0;
+}
+
+.label--booking-terms {
+	margin-left: 9px;
+}
+
+.payment-methods {
+	list-style-type: none !important;
+	padding-left: 0 !important;
+	margin-top: 27px;
+}
+
+.payment-method__label {
+	color: #303133;
+	margin-left: 4px;
+
+	> img {
+		position: absolute;
+		margin-left: 18px;
+	}
+}
+
+.payment-method__description {
+	font-size: .9em;
+	margin-left: 24px;
+	margin-bottom: 9px;
+}
+
+.payment-method {
+	position: relative;
+}
+
+.payment-method--single {
+	.payment-method__input {
+		display: none;
+	}
+
+	.payment-method__label {
+		margin-left: 0;
+	}
+
+	.payment-method__description {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+}
+
+#stripe-card-element {
+	display: block;
+	line-height: initial;
+	margin: 9px 0px 0px 0px;
+	padding: 11px 15px;
+	border-style: solid;
+	border-radius: 2px;
+	font-weight: normal;
+	background-color: #fff;
+	border: 1px solid transparent;
+}
+
+.style-light,
+.style-dark .style-light {
+	#stripe-card-element {
+		border-color: #eaeaea;
+	}
+
+	.input-background #stripe-card-element {
+		background-color: #f7f7f7 !important;
+	}
+}
+
+.style-dark,
+.style-light .style-dark {
+	#stripe-card-element {
+		border-color: rgba(255, 255, 255, 0.25);
+	}
+
+	.input-background #stripe-card-element {
+		background-color: rgba(0, 0, 0, 0.15) !important;
+	}
+}
+
+.input-background {
+	#stripe-card-element {
+		border-color: transparent;
+		box-shadow: none;
+	}
+}
+
+.input-underline {
+	#stripe-card-element {
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		box-shadow: none;
+		border-radius: 0;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		background: none !important;
+	}
+}
+
+label[for=stripe-card-element] {
+	color: #303133;
+	margin-top: 18px;
+	display: block;
+}
+
+.form-no-labels {
+	#stripe-payment-data .form-row__label {
+		display: none;
+	}
+
+	#stripe-card-element {
+		margin-top: 18px;
+	}
+}
+
+.reservation-table__room-thumbnail {
+	display: none;
+}
+
+.order-table-with-thumbs .reservation-table__room-thumbnail {
+	display: block;
+	margin-bottom: 18px;
+	max-width: 100px;
+}
+
+.booking__section .privacy-policy-text p {
+	font-weight: inherit;
+	color: inherit !important;
+}
+
+.uncode-htl-module--reservation-received {
+	.reservation-table__room-guests {
+		margin-top: 9px;
+	}
+
+	.reservation-non-cancellable-disclaimer {
+		font-weight: 600;
+		color: #303133;
+	}
+}
+
+.vertical-align-top {
+	.table--reservation-table {
+		th,
+		td {
+			vertical-align: top;
+		}
+	}
+}
+
+.form-no-labels {
+	.booking__section--guest-details,
+	.booking__section--guest-additional-information {
+		.form-row > label {
+			display: none;
+		}
+	}
+}
+
+.form-compact-layout {
+	.guest-details-fields {
+		@media (min-width: 570px) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 27px;
+
+			.form-row--first,
+			.form-row--last {
+				width: 100%;
+				margin-bottom: 0;
+				float: none;
+				clear: none;
+			}
+		}
+	}
+}
+
+#address2_field label {
+	display: none;
+}
+
+.form-compact-layout {
+	#address2_field label {
+		display: inline;
+	}
+
+	&.form-no-labels #address2_field label {
+		display: none;
+	}
+}
+
+.uncode-htl-module--booking.bold-text {
+	.table--reservation-table {
+		td .reservation-table__room-link,
+		td.product-name strong.product-quantity,
+		th,
+		.amount {
+			font-weight: 600;
+		}
+	}
+
+	.table--guest-details th {
+		font-weight: 600;
+	}
+
+	.form-row {
+		label {
+			font-weight: 600;
+		}
+	}
+
+	.payment-method__label {
+		font-weight: 600;
+	}
+}
+
+.reservation-received__section {
+	h3 {
+		margin-top: 0;
+	}
+
+	address {
+		font-style: normal;
+	}
+}
+
+.reservation-details__list {
+	list-style-type: none !important;
+	padding-left: 0 !important;
+
+	li {
+		display: table;
+		table-layout: fixed;
+
+		span {
+			min-width: 208px;
+			display: table-cell;
+		}
+	}
+
+	.reservation-details__data--special-requests {
+		display: block;
+	}
+
+	strong {
+		color: #303133;
+	}
+}
+
+.reservation-details__item--special-requests {
+	margin-top: 18px;
+}
+
+.reservation-details__data--special-requests {
+	display: block;
+}
+
+.privacy-policy-text {
+	margin-top: 27px;
+}
+
+.credit-cards__list {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.credit-cards__icon {
+	display: inline-block;
+	height: 38px;
+	margin-bottom: 4px;
+	position: relative;
+	text-indent: -99999px;
+	width: 60px;
+
+	&:before {
+		background-color: #fff;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		border: 1px solid #eaeaea;
+		border-radius: 1px;
+		content: '';
+		display: inline-block;
+		height: 38px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 60px;
+	}
+}
+
+.credit-cards__icon--mastercard:before {
+	background-image: url(../../../wp-hotelier/assets/images/cards/mastercard.svg);
+}
+
+.credit-cards__icon--amex:before {
+	background-image: url(../../../wp-hotelier/assets/images/cards/amex.svg);
+}
+
+.credit-cards__icon--cirrus:before {
+	background-image: url(../../../wp-hotelier/assets/images/cards/cirrus.svg);
+}
+
+.credit-cards__icon--discover:before {
+	background-image: url(../../../wp-hotelier/assets/images/cards/discover.svg);
+}
+
+.credit-cards__icon--maestro:before {
+	background-image: url(../../../wp-hotelier/assets/images/cards/maestro.svg);
+}
+
+.credit-cards__icon--visa:before {
+	background-image: url(../../../wp-hotelier/assets/images/cards/visa.svg);
+}
+
+.credit-cards__icon--visa_e:before {
+	background-image: url(../../../wp-hotelier/assets/images/cards/visa_e.svg);
+}

@@ -1,0 +1,25 @@
+$notice_success_color: #303133; // rgb(48,49,51);
+$notice_error_color: #FF3100; // rgb(255,49,0)
+
+.hotelier-notice {
+	font-weight: 400 !important;
+	font-size: 1em !important;
+
+	&--info {
+		background-color: rgba(48,49,51,.05);
+		border-radius: 3px;
+		color: $notice_success_color;
+		list-style-type: none !important;
+		margin-bottom: 36px;
+		padding: 12px 18px;
+	}
+
+	&--error {
+		background-color: rgba(255,49,0,.05);
+		border-radius: 3px;
+		color: $notice_error_color;
+		list-style-type: none !important;
+		margin-bottom: 36px;
+		padding: 18px 27px !important;
+	}
+}

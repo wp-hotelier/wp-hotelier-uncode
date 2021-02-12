@@ -1,0 +1,18 @@
+.room__conditions-list,
+.rate__conditions-list {
+	list-style-type: none !important;
+	padding-left: 0 !important;
+
+	li {
+		color: #303133;
+		font-weight: 600;
+
+		&:before {
+			font-family: 'uncodeicon';
+			content: '\f105';
+			margin-right: 9px;
+			position: relative;
+			top: 1px;
+		}
+	}
+}

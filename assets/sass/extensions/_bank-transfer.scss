@@ -1,0 +1,15 @@
+.bank-details__list {
+	list-style-type: none !important;
+	padding-left: 0 !important;
+
+	li {
+		display: table;
+		table-layout: fixed;
+
+		strong {
+			color: #303133;
+			min-width: 208px;
+			display: table-cell;
+		}
+	}
+}

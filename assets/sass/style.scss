@@ -1,0 +1,50 @@
+/**
+ * WP Hotelier CSS for the Uncode theme
+ */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+ELEMENTS
+	Posts module
+	Datepicker
+	Deposit
+	Infos
+	Conditions
+	Notices
+	Buttons
+	Prices
+	Widgets
+
+PAGES
+	Single room
+	Listing page
+	Booking page
+
+EXTENSIONS
+	Advanced Pricing System
+	Bank Transfer
+*/
+
+@import "mixins/mixins";
+
+// ELEMENTS
+@import "elements/posts-module";
+@import "elements/datepicker";
+@import "elements/deposit";
+@import "elements/infos";
+@import "elements/room-conditions";
+@import "elements/notices";
+@import "elements/buttons";
+@import "elements/prices";
+@import "elements/widgets";
+
+// PAGES
+@import "pages/single-room";
+@import "pages/listing";
+@import "pages/booking";
+
+// EXTENSIONS
+@import "extensions/advanced-pricing-system";
+@import "extensions/bank-transfer";

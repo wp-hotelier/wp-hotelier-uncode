@@ -1,0 +1,7 @@
+.button.btn {
+	&.button--check-availability,
+	&.button--toggle-rates,
+	&.button--add-to-cart {
+		padding: 8px 27px !important;
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"name": "wp-hotelier-uncode",
+	"description": "WP Hotelier integration for the Uncode theme.",
+	"version": "1.0.0",
+	"homepage": "https://wphotelier.com/",
+	"author": "Benito Lopez http://lopezb.com/",
+	"scripts": {
+		"run:sass": "node-sass --output .tmp assets/sass --output-style expanded",
+		"run:pot": "rm -rf dist; wp-pot --src '**/*.php' --dest-file languages/wp-hotelier-uncode.pot --domain wp-hotelier-uncode --package 'WP Hotelier' --bug-report https://github.com/wp-hotelier/wp-hotelier-uncode --team 'WP Hotelier <support@wphotelier.com>' --write-file",
+		"run:sync": "rsync -azP -e \"ssh -p ${npm_config_P_SSHPORT}\" --delete --exclude='package*.json' --exclude='postcss.config.js' --exclude='.*/' --exclude='.*' --exclude='node_modules/' --exclude='dist/' --exclude='assets/sass/' . \"${npm_config_P_SYNCDEST}\"",
+		"run:js": "rm -f assets/js/*.min.js; for f in assets/js/*.js; do short=${f%.js}; uglifyjs $f > $short.min.js; done",
+		"build:pot": "onchange '**/*.php' -i -w -- npm run run:pot",
+		"build:css": "postcss --no-map -w .tmp/**/*.css --base .tmp -d assets/css",
+		"build:scss": "npm run run:sass && npm run run:sass -- -w",
+		"build:js": "onchange 'assets/js/*.js' -e 'assets/js/*.min.js' -i -w -- npm run run:js",
+		"sync": "onchange '**/*' -e 'dist' -e 'assets/sass' -e '.git' -e 'languages' -e 'assets/js/*.min.js' -e '.tmp' -w -- npm run run:sync",
+		"server": "browser-sync start --proxy $npm_config_P_URL --host $npm_config_P_URL --reload-delay 2000 --files 'assets/css/**/*.css'",
+		"zip": "rsync -azP -e --delete --exclude='package*.json' --exclude='README.md' --exclude='postcss.config.js' --exclude='.*/' --exclude='.*' --exclude='node_modules/' --exclude='dist/' --exclude='assets/sass/' . dist/wp-hotelier-uncode; cd dist; zip -r wp-hotelier-uncode.$npm_package_version.zip wp-hotelier-uncode; cd ..",
+		"build": "npm-run-all --silent --parallel build:*",
+		"build-sync": "npm-run-all --silent --parallel build:* sync",
+		"build-server": "npm-run-all --silent --parallel build:* server",
+		"build-sync-server": "npm-run-all --silent --parallel build:* sync server",
+		"dist": "rm -rf dist; mkdir -p dist/wp-hotelier-uncode; npm run zip -s"
+	},
+	"devDependencies": {
+		"autoprefixer": "^7.1.1",
+		"browser-sync": "^2.18.5",
+		"css-mqpacker": "^6.0.0",
+		"node-sass": "^4.0.0",
+		"npm-run-all": "^4.0.2",
+		"onchange": "^3.2.1",
+		"postcss-cli": "^4.0.0",
+		"sass-mq": "^3.3.2",
+		"uglify-js": "^3.10.0",
+		"wp-pot-cli": "^1.0.1"
+	}
+}

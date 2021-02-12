@@ -1,0 +1,293 @@
+.selected-nights {
+	font-size: 14px;
+}
+
+.form--listing {
+	margin-top: 36px
+}
+
+.listing__list {
+	list-style-type: none !important;
+	padding-left: 0 !important
+}
+
+.listing__room {
+	border: 1px solid #eaeaea;
+	padding: 36px;
+	margin-top: 36px;
+	transition-duration: 0.2s;
+	transition-property: border-color;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.items-list-no-border {
+	.listing__room {
+		border-color: transparent;
+	}
+}
+
+.listing__room {
+	.items-list-shadowed & {
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+	}
+
+	.items-list-shadowed--darker & {
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+	}
+
+	.items-list-shadowed--sm & {
+		box-shadow: 0px 20px 60px -30px rgba(0, 0, 0, 0.45);
+	}
+
+	.items-list-shadowed--sm.items-list-shadowed--darker & {
+		box-shadow: 0px 20px 60px -30px #000000;
+	}
+
+	.items-list-shadowed--std & {
+		box-shadow: 0px 30px 60px -30px rgba(0, 0, 0, 0.45);
+	}
+
+	.items-list-shadowed--std.items-list-shadowed--darker & {
+		box-shadow: 0px 30px 60px -30px #000000;
+	}
+
+	.items-list-shadowed--lg & {
+		box-shadow: 0px 55px 80px -40px rgba(0, 0, 0, 0.45);
+	}
+
+	.items-list-shadowed--lg.items-list-shadowed--darker & {
+		box-shadow: 0px 55px 80px -40px #000000;
+	}
+
+	.items-list-shadowed--xl & {
+		box-shadow: 0px 70px 100px -40px rgba(0, 0, 0, 0.5);
+	}
+
+	.items-list-shadowed--xl.items-list-shadowed--darker & {
+		box-shadow: 0px 70px 100px -40px #000000;
+	}
+}
+
+.listing__room--queried {
+	margin-bottom: 72px;
+}
+
+.style-light,
+.style-light .style-dark {
+	.listing__room {
+		background-color: #fff;
+	}
+}
+
+.style-dark,
+.style-light .style-dark {
+	.listing__room {
+		background-color: #141618;
+	}
+}
+
+.room__content-wrapper {
+	@media (min-width: 960px) {
+		display: flex;
+		flex-wrap: row nowrap;
+		padding-left: 236px;
+		position: relative;
+		margin-bottom: 0;
+	}
+}
+
+.room__rate--listing {
+	border-top: 1px solid #eaeaea;
+	padding: 27px 0;
+
+	&:first-child {
+		margin-top: 27px;
+	}
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+
+	@media (min-width: 960px) {
+		display: flex;
+		flex-wrap: row nowrap;
+	}
+}
+
+.room__content--listing,
+.rate__content--listing {
+	@media (min-width: 960px) {
+		padding-right: 4%;
+		width: 60%;
+	}
+}
+
+.room__actions,
+.rate__actions {
+	margin-top: 27px;
+
+	@media (min-width: 960px) {
+		text-align: right;
+		margin-top: 0;
+		width: 40%;
+	}
+}
+
+.room__gallery--listing {
+	margin-top: 36px;
+
+	@media (min-width: 960px) {
+		left: 0;
+		margin-top: 0;
+		position: absolute;
+		text-align: center;
+		top: 0;
+	}
+}
+
+.room__image--listing {
+	display: inline-block;
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 200px !important;
+	}
+}
+
+.room__name--listing,
+.rate__room--listing {
+	margin-top: 0 !important;
+	font-size: 17px;
+}
+
+.rate__name--listing {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.room__content--listing,
+.rate__content--listing {
+	p {
+		font-weight: inherit;
+		color: inherit !important;
+	}
+}
+
+.room__details--listing,
+.room__rates--listing {
+	display: none;
+}
+
+.room__actions {
+	.room__price-wrapper--listing + {
+		.button--toggle-rates,
+		.button--add-to-cart,
+		.add-to-cart-wrapper {
+			margin-top: 18px;
+		}
+	}
+}
+
+.rate__actions {
+	div.rate__price--listing + {
+		.add-to-cart-wrapper--rate {
+			margin-top: 18px;
+		}
+	}
+}
+
+.room__price-wrapper--listing {
+	.room__price-description {
+		font-size: 13px;
+		display: block;
+	}
+}
+
+.rate__price--listing {
+	.rate__price-description {
+		font-size: 13px;
+		display: block;
+	}
+}
+
+.room__price--listing,
+span.rate__price--listing {
+	color: #303133;
+	font-weight: 600;
+}
+
+.room__more-link {
+	font-size: 14px;
+
+	&:after {
+		font-family: 'uncodeicon';
+		content: '\f105';
+		margin-left: 9px;
+		position: relative;
+		top: 1px;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
+.room__max-guests {
+	margin-top: 18px;
+}
+
+.room__max-guests-label {
+	color: #303133;
+}
+
+.room__conditions--listing,
+.rate__conditions--listing {
+	margin-top: 18px;
+
+	li {
+		font-weight: 400;
+	}
+}
+
+.room__conditions-title--listing,
+.rate__conditions-title--listing {
+	color: #303133;
+}
+
+.room__non-cancellable-info--listing,
+.rate__non-cancellable-info--listing {
+	margin-bottom: 18px;
+}
+
+.room__only-x-left {
+	border-radius: 2px;
+	font-size: 11px !important;
+	padding: 2px 5px 2px 5px;
+	display: inline-block;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff !important;
+	margin-bottom: 9px;
+}
+
+.add-to-cart-selected {
+	font-size: 11px;
+	display: block;
+}
+
+.room-quantity {
+	margin-bottom: 9px;
+
+	input {
+		display: inline-block;
+		margin-left: 9px;
+	}
+}
+
+#reserve-rooms-button {
+	text-align: right;
+	margin-top: 27px;
+}

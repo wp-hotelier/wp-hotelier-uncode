@@ -1,0 +1,181 @@
+/*--------------------------------------------------------------
+>>> SINGLE ROOM
+----------------------------------------------------------------
+*/
+
+.room__price--single,
+.rate__price--single {
+	color: #303133;
+	font-weight: 600;
+	display: block;
+}
+
+.room__price--single {
+	margin-top: 18px;
+}
+
+.rate__price--single {
+	margin-top: 18px;
+
+	@media (min-width: 960px) {
+		margin-top: 0;
+	}
+}
+
+.rate__price--single {
+	font-size: 15px;
+}
+
+.room-available-rates__link {
+	&:after {
+		font-family: 'uncodeicon';
+		content: '\f105';
+		margin-left: 9px;
+		position: relative;
+		top: 1px;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
+.room__meta-title--single,
+.room__facilities-title--single,
+.room__conditions-title--single,
+.room__rates-title {
+	font-size: 19px !important;
+}
+
+.room__meta-list--single {
+	list-style-type: none !important;
+	padding-left: 0 !important;
+
+	li {
+		display: table;
+		table-layout: fixed;
+
+		strong {
+			min-width: 108px;
+			display: table-cell;
+			color: #303133;
+		}
+	}
+}
+
+.room__rates-list {
+	list-style-type: none !important;
+	padding-left: 0 !important
+}
+
+.room__rate--single {
+	border: 1px solid #eaeaea;
+	padding: 36px;
+	margin-top: 36px;
+
+	@media (min-width: 960px) {
+		display: flex;
+		flex-wrap: row nowrap;
+	}
+}
+
+.room__rate--single .rate__description-wrapper {
+	@media (min-width: 960px) {
+		padding-right: 4%;
+		width: 55%;
+	}
+}
+
+.rate__actions--single {
+	@media (min-width: 960px) {
+		width: 45% !important;
+	}
+}
+
+.items-list-no-border {
+	.room__rate--single {
+		border-color: transparent;
+	}
+}
+
+.room__rate--single {
+	.items-list-shadowed & {
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+	}
+
+	.items-list-shadowed--darker & {
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+	}
+
+	.items-list-shadowed--sm & {
+		box-shadow: 0px 20px 60px -30px rgba(0, 0, 0, 0.45);
+	}
+
+	.items-list-shadowed--sm.items-list-shadowed--darker & {
+		box-shadow: 0px 20px 60px -30px #000000;
+	}
+
+	.items-list-shadowed--std & {
+		box-shadow: 0px 30px 60px -30px rgba(0, 0, 0, 0.45);
+	}
+
+	.items-list-shadowed--std.items-list-shadowed--darker & {
+		box-shadow: 0px 30px 60px -30px #000000;
+	}
+
+	.items-list-shadowed--lg & {
+		box-shadow: 0px 55px 80px -40px rgba(0, 0, 0, 0.45);
+	}
+
+	.items-list-shadowed--lg.items-list-shadowed--darker & {
+		box-shadow: 0px 55px 80px -40px #000000;
+	}
+
+	.items-list-shadowed--xl & {
+		box-shadow: 0px 70px 100px -40px rgba(0, 0, 0, 0.5);
+	}
+
+	.items-list-shadowed--xl.items-list-shadowed--darker & {
+		box-shadow: 0px 70px 100px -40px #000000;
+	}
+}
+
+.style-light,
+.style-light .style-dark {
+	.room__rate--single {
+		background-color: #fff;
+	}
+}
+
+.style-dark,
+.style-light .style-dark {
+	.room__rate--single {
+		background-color: #141618;
+	}
+}
+
+.rate__name--single {
+	margin-top: 0;
+	font-size: 15px !important;
+}
+
+.no-room-rates .hide-if-no-rates {
+	display: none !important;
+}
+
+@media (min-width: 960px) {
+	.room__facilities-list {
+		display: grid;
+		grid-column-gap: 27px;
+	}
+	.room__facilities-list--columns-2 {
+		grid-template-columns: 1fr 1fr;
+	}
+	.room__facilities-list--columns-3 {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.room__facilities-list--columns-4 {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.room__facilities-list--columns-5 {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}

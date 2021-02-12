@@ -1,0 +1,26 @@
+// non cancellable info
+.room__non-cancellable-info,
+.rate__non-cancellable-info,
+.reservation-table__room-non-cancellable {
+	font-weight: 600;
+	color: #FF3100 !important;
+	font-size: 15px;
+
+	p {
+		color: #FF3100 !important;
+	}
+}
+
+.reservation-table__room-non-cancellable {
+	display: block;
+}
+
+// min/max info
+.room__min-max-stay,
+.room__max-guests-recommendation {
+	color: #303133;
+	font-weight: 600;
+	margin-top: 18px;
+	display: block;
+	font-size: 15px;
+}

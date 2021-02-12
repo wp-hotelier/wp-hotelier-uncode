@@ -1,0 +1,80 @@
+/**
+ * WP Hotelier CSS for the Uncode theme (admin)
+ */
+
+.htl-ui-custom-datepicker {
+	&.ui-datepicker {
+		margin: 0;
+		border-radius: 0;
+	}
+
+	.ui-datepicker-header {
+		background: #fff;
+		color: #444;
+		left: 0;
+		line-height: 1.4em;
+		top: 0;
+		width: auto;
+		border-radius: 0;
+
+		a {
+			color: #0073aa;
+		}
+	}
+
+	.ui-datepicker-prev,
+	.ui-datepicker-next {
+		color: #0073aa;
+		font-family: inherit;
+		font-size: 13px;
+		height: auto;
+		text-align: left;
+		border-radius: 0;
+		border: none;
+		float: none;
+		display: block;
+
+		&:hover {
+			color: #0073aa;
+			background: transparent;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	table {
+		border-collapse: separate;
+		border-spacing: 2px;
+	}
+
+	thead {
+		background-color: #fff;
+		border-bottom: none;
+	}
+
+	tbody td {
+		border: none;
+	}
+
+	td span,
+	td a {
+		width: auto;
+		height: auto;
+		line-height: inherit;
+	}
+
+	.ui-state-default {
+		background-color: transparent;
+	}
+
+	tr:last-child .ui-state-active {
+		height: auto;
+	}
+
+	.ui-datepicker-unselectable .ui-state-default,
+	td.ui-state-disabled {
+		color: #e8e8e8 !important;
+	}
+}
