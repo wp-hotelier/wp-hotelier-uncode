@@ -11,11 +11,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Add room price to vc_heading auto text.
  */
 function htl_uncode_add_vc_heading_room_price() {
-	$param = WPBMap::getParam( 'vc_custom_heading', 'auto_text' );
+	if ( class_exists( 'WPBMap' ) ) {
+		$param = WPBMap::getParam( 'vc_custom_heading', 'auto_text' );
 
-	if ( $param ) {
-		$param['value'][esc_html__( 'Get the Price for Single Room (WP Hotelier)', 'wp-hotelier-uncode' )] = 'room_price';
-		vc_update_shortcode_param( 'vc_custom_heading', $param );
+		if ( $param ) {
+			$param['value'][esc_html__( 'Get the Price for Single Room (WP Hotelier)', 'wp-hotelier-uncode' )] = 'room_price';
+			vc_update_shortcode_param( 'vc_custom_heading', $param );
+		}
 	}
 }
 add_action( 'admin_init', 'htl_uncode_add_vc_heading_room_price', 1000 );
