@@ -239,16 +239,48 @@ add_action( 'hotelier_reservation_table_before_room_name', 'htl_uncode_reservati
 add_action( 'hotelier_reservation_received_table_before_room_name', 'htl_uncode_reservation_table_add_thumbs' );
 
 /**
+ * Append hidden input with a string that contains
+ * the button classes so we can have them in JS
+ */
+function htl_uncode_booking_before_booking_table( $html ) {
+	global $booking_button_class;
+
+	if ( is_array( $booking_button_class ) ) {
+		echo '<input id="hotelier-uncode-hidden-btn-classes" type="hidden" value="' . implode( ' ', $booking_button_class ) . '">
+		';
+	}
+}
+add_action( 'hotelier_booking_before_booking_table', 'htl_uncode_booking_before_booking_table' );
+
+/**
  * Add special button classes to remove room
  */
 function htl_uncode_cart_item_remove_link( $html ) {
 	global $booking_button_class;
 
-	$html = str_replace( 'reservation-table__room-remove', 'reservation-table__room-remove btn-sm ' . implode( ' ', $booking_button_class ), $html );
+	if ( is_array( $booking_button_class ) ) {
+		$html = str_replace( 'reservation-table__room-remove', 'reservation-table__room-remove btn-sm ' . implode( ' ', $booking_button_class ), $html );
+	}
 
 	return $html;
 }
 add_filter( 'hotelier_cart_item_remove_link', 'htl_uncode_cart_item_remove_link' );
+
+/**
+ * Add special button classes to form coupon
+ */
+function htl_uncode_form_coupon_button_classes( $classes ) {
+	global $booking_button_class;
+
+	if ( is_array( $booking_button_class ) ) {
+		$classes = array_merge( $classes, $booking_button_class );
+	}
+
+	$classes[] = 'btn-sm';
+
+	return $classes;
+}
+add_filter( 'hotelier_form_coupon_button_classes', 'htl_uncode_form_coupon_button_classes' );
 
 /**
  * Add special button classes to book button
