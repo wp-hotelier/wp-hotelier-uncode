@@ -1667,6 +1667,54 @@ label[for=stripe-card-element] {
   background-image: url(../../../wp-hotelier/assets/images/cards/visa_e.svg);
 }
 
+.coupon-form__input {
+  margin-top: 0;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.coupon-form {
+  text-align: left;
+}
+
+.coupon-form .hotelier-notice {
+  margin-bottom: 0;
+  margin-top: 18px;
+  text-align: left;
+}
+
+.coupon-card {
+  margin-top: 18px;
+  background-color: #f7f7f7;
+  padding: 18px;
+}
+
+.coupon-card__info {
+  margin-bottom: 18px;
+}
+
+.coupon-card__title {
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+.coupon-card__description {
+  font-style: italic;
+  font-size: .9em;
+  display: block;
+}
+
+.coupon-form__remove {
+  margin-top: 9px !important;
+}
+
+.coupon-card__total strong {
+  display: block;
+}
+
 .room-fee {
   margin-top: 18px;
 }
@@ -1784,6 +1832,36 @@ label[for=stripe-card-element] {
     margin-bottom: 0;
     float: none;
     clear: none;
+  }
+  .coupon-form-input-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .coupon-form__input {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 0;
+    width: auto;
+    margin-right: 9px;
+  }
+  .coupon-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .coupon-card__info {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 0;
+  }
+  .coupon-card__description {
+    padding-right: 18px;
+  }
+  .coupon-card__total strong {
+    text-align: right;
   }
 }
 

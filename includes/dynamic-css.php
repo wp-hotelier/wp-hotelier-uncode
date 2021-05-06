@@ -338,12 +338,22 @@ function htl_uncode_print_dynamic_css() {
 		}
 
 		.style-light .reservation-details__list strong,
-		.style-dark .style-light ..reservation-details__list strong {
+		.style-dark .style-light .reservation-details__list strong {
 			color: <?php echo esc_html( $cs_heading_color_light ); ?>;
 		}
 
 		.style-dark .reservation-details__list strong,
-		.style-light .style-dark ..reservation-details__list strong {
+		.style-light .style-dark .reservation-details__list strong {
+			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
+		}
+
+		.style-light .coupon-card__title,
+		.style-dark .style-light .coupon-card__title {
+			color: <?php echo esc_html( $cs_heading_color_light ); ?>;
+		}
+
+		.style-dark .coupon-card__title,
+		.style-light .style-dark .coupon-card__title {
 			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
 		}
 	</style>
