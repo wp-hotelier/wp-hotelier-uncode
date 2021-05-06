@@ -22,7 +22,18 @@ class HTL_Uncode_Scripts {
 	public function __construct() {
 		add_filter( 'hotelier_enqueue_styles', '__return_false' );
 		add_action( 'wp_enqueue_scripts', array( $this, 'frontend_styles' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'frontend_scripts' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_styles' ) );
+	}
+
+	/**
+	 * Enqueue frontend styles
+	 *
+	 * @access public
+	 * @return void
+	 */
+	public function frontend_styles() {
+		wp_enqueue_style( 'hotelier-uncode-css', HTL_UNCODE_PLUGIN_URL . 'assets/css/style.css', array(), HTL_UNCODE_VERSION );
 	}
 
 	/**
@@ -31,8 +42,11 @@ class HTL_Uncode_Scripts {
 	 * @access public
 	 * @return void
 	 */
-	public function frontend_styles() {
-		wp_enqueue_style( 'hotelier-uncode-css', HTL_UNCODE_PLUGIN_URL . 'assets/css/style.css', array(), HTL_UNCODE_VERSION );
+	public function frontend_scripts() {
+		// Use minified libraries if SCRIPT_DEBUG is turned off
+		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+
+		wp_enqueue_script( 'hotelier-uncode-js', HTL_UNCODE_PLUGIN_URL . 'assets/js/main' . $suffix . '.js', array( 'jquery' ), HTL_UNCODE_VERSION, true );
 	}
 
 	/**
