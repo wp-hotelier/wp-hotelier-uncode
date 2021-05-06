@@ -3,7 +3,7 @@
  * Plugin Name:       WP Hotelier - Uncode Integration
  * Plugin URI:        https://github.com/wp-hotelier/wp-hotelier-uncode
  * Description:       Advanced integration for the Uncode theme.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            WP Hotelier
  * Author URI:        https://wphotelier.com/
  * Requires at least: 4.4
@@ -29,7 +29,7 @@ final class Hotelier_Uncode {
 	/**
 	 * @var string
 	 */
-	public $version = '1.0.0';
+	public $version = '1.1.0';
 
 	/**
 	 * @var Hotelier_Uncode The single instance of the class
