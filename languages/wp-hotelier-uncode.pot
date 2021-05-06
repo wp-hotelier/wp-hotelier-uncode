@@ -209,7 +209,7 @@ msgstr[1] ""
 msgid "%s Children"
 msgstr ""
 
-#: ../includes/vc/booking/booking-output.php:312
+#: ../includes/vc/booking/booking-output.php:344
 msgid "Card Holder Name (required) "
 msgstr ""
 
