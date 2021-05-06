@@ -64,6 +64,10 @@ function htl_uncode_get_heading_classes( $atts ) {
 			$heading_class[] = 'h2';
 		}
 
+		if ( isset( $atts['titles_font'] ) && $atts['titles_font'] ) {
+			$heading_class[] = $atts['titles_font'];
+		}
+
 		if ( isset( $atts['titles_weight'] ) && $atts['titles_weight'] ) {
 			$heading_class[] = 'font-weight-' . $atts['titles_weight'];
 		}
