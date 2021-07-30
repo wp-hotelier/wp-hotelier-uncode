@@ -24,3 +24,14 @@
 	display: block;
 	font-size: 15px;
 }
+
+// not available info
+.room__not-available-info {
+	font-weight: 600;
+	color: #FF3100 !important;
+	font-size: 15px;
+
+	p {
+		color: #FF3100 !important;
+	}
+}

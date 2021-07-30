@@ -220,6 +220,22 @@
 	margin-top: 18px !important;
 }
 
+.reservation-table__room-extra-cost {
+	text-align: right !important;
+}
+
+.reservation-table__room-extra {
+	.extra__name {
+		font-weight: 400;
+	}
+
+	.extra__description {
+		display: block;
+		font-size: .9em;
+		margin-top: 9px;
+	}
+}
+
 .privacy-policy-text,
 .form-row--booking-terms {
 	margin-bottom: 36px;

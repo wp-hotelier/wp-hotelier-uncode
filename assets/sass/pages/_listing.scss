@@ -89,7 +89,7 @@
 .room__content-wrapper {
 	@media (min-width: 960px) {
 		display: flex;
-		flex-wrap: row nowrap;
+		flex-wrap: wrap;
 		padding-left: 236px;
 		position: relative;
 		margin-bottom: 0;
@@ -110,7 +110,7 @@
 
 	@media (min-width: 960px) {
 		display: flex;
-		flex-wrap: row nowrap;
+		flex-wrap: wrap;
 	}
 }
 
@@ -290,4 +290,59 @@ span.rate__price--listing {
 #reserve-rooms-button {
 	text-align: right;
 	margin-top: 27px;
+}
+
+.guests-quantity {
+
+	margin-left: auto;
+
+	select {
+		display: inline-block;
+    	margin-left: 9px;
+    	width: 100px;
+    	max-width: 100px;
+    	min-width: 100px;
+	}
+}
+
+
+.room-extras__title {
+	font-size: 16px !important;
+	margin-top: 27px;
+	padding-top: 27px;
+	border-top: 1px solid #eaeaea;
+}
+
+.room-extra {
+	padding-bottom: 18px;
+	border-bottom: 1px solid #eaeaea;
+
+	&:last-child {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+}
+
+.room-extra__title {
+	font-size: 14px !important;
+	margin-top: 18px;
+}
+
+.room-extra__description {
+	font-weight: 400 !important;
+	font-size: 13px !important;
+}
+
+.room-extra__price {
+	display: block;
+	margin-top: 9px;
+}
+
+.room-extra__info {
+	font-size: .9em;
+	font-style: italic;
+}
+
+.rate__extras.room-extras {
+	width: 100%;
 }

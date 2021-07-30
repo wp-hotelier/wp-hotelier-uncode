@@ -261,6 +261,16 @@ function htl_uncode_print_dynamic_css() {
 			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
 		}
 
+		.style-light .room-extra__price,
+		.style-dark .style-light .room-extra__price {
+			color: <?php echo esc_html( $cs_heading_color_light ); ?>;
+		}
+
+		.style-dark .room-extra__price,
+		.style-light .style-dark .room-extra__price {
+			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
+		}
+
 		.style-light .table--price-breakdown th,
 		.style-dark .style-light .table--price-breakdown th {
 			background-color: <?php echo esc_html( $cs_heading_color_light ); ?>;
@@ -354,6 +364,16 @@ function htl_uncode_print_dynamic_css() {
 
 		.style-dark .coupon-card__title,
 		.style-light .style-dark .coupon-card__title {
+			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
+		}
+
+		.style-light .reservation-table__room-extra .extra__name,
+		.style-dark .style-light .reservation-table__room-extra .extra__name {
+			color: <?php echo esc_html( $cs_heading_color_light ); ?>;
+		}
+
+		.style-dark .reservation-table__room-extra .extra__name,
+		.style-light .style-dark .reservation-table__room-extra .extra__name {
 			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
 		}
 	</style>

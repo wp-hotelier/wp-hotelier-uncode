@@ -515,6 +515,16 @@ EXTENSIONS
   font-size: 15px;
 }
 
+.room__not-available-info {
+  font-weight: 600;
+  color: #FF3100 !important;
+  font-size: 15px;
+}
+
+.room__not-available-info p {
+  color: #FF3100 !important;
+}
+
 .room__conditions-list,
 .rate__conditions-list {
   list-style-type: none !important;
@@ -1164,6 +1174,59 @@ span.rate__price--listing {
   margin-top: 27px;
 }
 
+.guests-quantity {
+  margin-left: auto;
+}
+
+.guests-quantity select {
+  display: inline-block;
+  margin-left: 9px;
+  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
+}
+
+.room-extras__title {
+  font-size: 16px !important;
+  margin-top: 27px;
+  padding-top: 27px;
+  border-top: 1px solid #eaeaea;
+}
+
+.room-extra {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.room-extra:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.room-extra__title {
+  font-size: 14px !important;
+  margin-top: 18px;
+}
+
+.room-extra__description {
+  font-weight: 400 !important;
+  font-size: 13px !important;
+}
+
+.room-extra__price {
+  display: block;
+  margin-top: 9px;
+}
+
+.room-extra__info {
+  font-size: .9em;
+  font-style: italic;
+}
+
+.rate__extras.room-extras {
+  width: 100%;
+}
+
 .form--booking h3,
 .form--pay-reservation h3 {
   margin-top: 0;
@@ -1384,6 +1447,20 @@ span.rate__price--listing {
 
 .reservation-table__room-remove {
   margin-top: 18px !important;
+}
+
+.reservation-table__room-extra-cost {
+  text-align: right !important;
+}
+
+.reservation-table__room-extra .extra__name {
+  font-weight: 400;
+}
+
+.reservation-table__room-extra .extra__description {
+  display: block;
+  font-size: .9em;
+  margin-top: 9px;
 }
 
 .privacy-policy-text,
@@ -1968,8 +2045,8 @@ label[for=stripe-card-element] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: row nowrap;
-        flex-wrap: row nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-left: 236px;
     position: relative;
     margin-bottom: 0;
@@ -1978,8 +2055,8 @@ label[for=stripe-card-element] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: row nowrap;
-        flex-wrap: row nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .room__content--listing,
   .rate__content--listing {
