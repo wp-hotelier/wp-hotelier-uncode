@@ -37,3 +37,12 @@ function htl_uncode_booking_default_address_fields( $fields ) {
 }
 add_filter( 'hotelier_booking_default_address_fields', 'htl_uncode_booking_default_address_fields' );
 
+/**
+ * Add special button classes to AJAX Room Booking button
+ */
+function htl_uncode_widget_ajax_room_booking_html( $html ) {
+	$html = str_replace( 'button--widget-ajax-room-booking', 'button--widget-ajax-room-booking btn-default btn-block', $html );
+
+	return $html;
+}
+add_filter( 'hotelier_widget_ajax_room_booking_html', 'htl_uncode_widget_ajax_room_booking_html' );

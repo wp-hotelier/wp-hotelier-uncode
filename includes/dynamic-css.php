@@ -376,6 +376,16 @@ function htl_uncode_print_dynamic_css() {
 		.style-light .style-dark .reservation-table__room-extra .extra__name {
 			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
 		}
+
+		.style-light .rate__conditions-title--widget-ajax-room-booking,
+		.style-dark .style-light .rate__conditions-title--widget-ajax-room-booking {
+			color: <?php echo esc_html( $cs_heading_color_light ); ?>;
+		}
+
+		.style-dark .rate__conditions-title--widget-ajax-room-booking,
+		.style-light .style-dark .rate__conditions-title--widget-ajax-room-booking {
+			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
+		}
 	</style>
 
 	<?php
