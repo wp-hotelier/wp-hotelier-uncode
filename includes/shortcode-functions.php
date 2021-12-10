@@ -14,6 +14,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Set query vars before to render the room shortcodes.
  */
 function htl_uncode_shortcode_before_loop( $columns ) {
+	if ( ! function_exists( 'ot_get_option' ) ) {
+		return;
+	}
+
 	$single_post_width  = htl_uncode_get_col_value( $columns );
 	$single_text_length = ot_get_option('_uncode_room_index_single_text_length');
 	set_query_var( 'single_post_width', $single_post_width );
