@@ -23,6 +23,7 @@ PAGES
 
 EXTENSIONS
 	Advanced Pricing System
+	Advanced Extras
 	Bank Transfer
 */
 /*--------------------------------------------------------------
@@ -1838,6 +1839,7 @@ label[for=stripe-card-element] {
 .room-fee__title {
   display: block;
   color: #303133;
+  margin-bottom: 18px;
 }
 
 .room-fee__label {
@@ -1845,13 +1847,38 @@ label[for=stripe-card-element] {
   font-size: .9em;
 }
 
-.room-fee__label input[type="radio"] {
+.room-fee__label input[type="radio"],
+.room-fee__label input[type="checkbox"] {
   margin-right: 5px;
 }
 
 .reservation-table__extra-guests-fee {
   display: block;
   font-size: .9em;
+}
+
+.button--extras-toggle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.button--extras-toggle:after {
+  font-family: 'uncodeicon';
+  content: '\f105';
+  margin-left: 9px;
+  position: relative;
+  top: 1px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.button--extras-toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.rate__extras .button--extras-toggle {
+  margin-top: 18px;
 }
 
 .bank-details__list {

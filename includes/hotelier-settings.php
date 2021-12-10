@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Remove WP Hotelier gallery.
+ * Remove WP Hotelier settings.
  */
 function htl_uncode_remove_hotelier_gallery( $settings ) {
 	if ( isset( $settings[ 'room_lightbox' ] ) ) {
@@ -20,6 +20,18 @@ function htl_uncode_remove_hotelier_gallery( $settings ) {
 
 	if ( isset( $settings[ 'room_single_image_size' ] ) ) {
 		unset( $settings[ 'room_single_image_size' ] );
+	}
+
+	if ( isset( $settings[ 'room_hide_gallery' ] ) ) {
+		unset( $settings[ 'room_hide_gallery' ] );
+	}
+
+	if ( isset( $settings[ 'room_hide_rates' ] ) ) {
+		unset( $settings[ 'room_hide_rates' ] );
+	}
+
+	if ( isset( $settings[ 'room_hide_related' ] ) ) {
+		unset( $settings[ 'room_hide_related' ] );
 	}
 
 	return $settings;

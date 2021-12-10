@@ -38,6 +38,10 @@ function htl_uncode_get_overriden_templates_list() {
  * Override default WP Hotelier templates when using htl_get_template()
  */
 function htl_uncode_get_template( $located, $template_name, $args, $template_path, $default_path ) {
+	if ( ! function_exists( 'ot_get_option' ) ) {
+		return $located;
+	}
+
 	if ( in_array( $template_name, htl_uncode_get_overriden_templates_list() ) ) {
 		// Look within passed path within the theme - this is priority
 		$located = locate_template(
@@ -61,6 +65,10 @@ add_filter( 'hotelier_get_template', 'htl_uncode_get_template', 10, 5 );
  * Override default WP Hotelier templates when using htl_get_template_part()
  */
 function htl_uncode_get_template_part( $template, $slug, $name ) {
+	if ( ! function_exists( 'ot_get_option' ) ) {
+		return $template;
+	}
+
 	$template_name = $slug . '-' . $name . '.php';
 
 	if ( in_array( $template_name, htl_uncode_get_overriden_templates_list() ) ) {
@@ -75,6 +83,10 @@ add_filter( 'hotelier_get_template_part', 'htl_uncode_get_template_part', 10, 3 
  * Override real WP templates
  */
 function htl_uncode_template_loader( $template ) {
+	if ( ! function_exists( 'ot_get_option' ) ) {
+		return $template;
+	}
+
 	$find = array();
 	$file = '';
 
