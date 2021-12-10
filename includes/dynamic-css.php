@@ -376,6 +376,16 @@ function htl_uncode_print_dynamic_css() {
 		.style-light .style-dark .reservation-table__room-extra .extra__name {
 			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
 		}
+
+		.style-light .button--extras-toggle,
+		.style-dark .style-light .button--extras-toggle {
+			color: <?php echo esc_html( $cs_heading_color_light ); ?>;
+		}
+
+		.style-dark .button--extras-toggle,
+		.style-light .style-dark .button--extras-toggle {
+			color: <?php echo esc_html( $cs_heading_color_dark ); ?>;
+		}
 	</style>
 
 	<?php

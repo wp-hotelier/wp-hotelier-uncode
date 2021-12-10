@@ -1,0 +1,23 @@
+.button--extras-toggle {
+	font-size: 14px;
+	font-weight: 600;
+
+	&:after {
+		font-family: 'uncodeicon';
+		content: '\f105';
+		margin-left: 9px;
+		position: relative;
+		top: 1px;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
+.button--extras-toggle {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.rate__extras .button--extras-toggle {
+	margin-top: 18px;
+}
