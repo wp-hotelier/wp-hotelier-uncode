@@ -22,6 +22,18 @@ function htl_uncode_remove_hotelier_gallery( $settings ) {
 		unset( $settings[ 'room_single_image_size' ] );
 	}
 
+	if ( isset( $settings[ 'room_hide_gallery' ] ) ) {
+		unset( $settings[ 'room_hide_gallery' ] );
+	}
+
+	if ( isset( $settings[ 'room_hide_rates' ] ) ) {
+		unset( $settings[ 'room_hide_rates' ] );
+	}
+
+	if ( isset( $settings[ 'room_hide_related' ] ) ) {
+		unset( $settings[ 'room_hide_related' ] );
+	}
+
 	return $settings;
 }
 add_filter( 'hotelier_settings_rooms_and_reservations', 'htl_uncode_remove_hotelier_gallery' );
