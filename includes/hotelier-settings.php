@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Remove WP Hotelier gallery.
+ * Remove WP Hotelier settings.
  */
 function htl_uncode_remove_hotelier_gallery( $settings ) {
 	if ( isset( $settings[ 'room_lightbox' ] ) ) {
