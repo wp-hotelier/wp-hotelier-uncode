@@ -1076,6 +1076,11 @@ EXTENSIONS
   margin-top: 27px;
 }
 
+.listing__room--rates-expanded.listing__room--variable .room__content--listing {
+  padding-right: 0;
+  width: 100%;
+}
+
 .room__gallery--listing {
   margin-top: 36px;
 }
@@ -1115,6 +1120,11 @@ EXTENSIONS
   display: none;
 }
 
+.listing__room--rates-expanded .room__details--listing,
+.listing__room--rates-expanded .room__rates--listing {
+  display: block;
+}
+
 .room__actions .room__price-wrapper--listing + .button--toggle-rates,
 .room__actions .room__price-wrapper--listing + .button--add-to-cart,
 .room__actions .room__price-wrapper--listing + .add-to-cart-wrapper {
@@ -1146,8 +1156,8 @@ span.rate__price--listing {
 }
 
 .room__more-link:after {
-  font-family: 'uncodeicon';
-  content: '\f105';
+  font-family: "uncodeicon";
+  content: "\f105";
   margin-left: 9px;
   position: relative;
   top: 1px;
@@ -1259,7 +1269,7 @@ span.rate__price--listing {
 }
 
 .room-extra__info {
-  font-size: .9em;
+  font-size: 0.9em;
   font-style: italic;
 }
 

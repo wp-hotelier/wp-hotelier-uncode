@@ -3,12 +3,12 @@
 }
 
 .form--listing {
-	margin-top: 36px
+	margin-top: 36px;
 }
 
 .listing__list {
 	list-style-type: none !important;
-	padding-left: 0 !important
+	padding-left: 0 !important;
 }
 
 .listing__room {
@@ -17,7 +17,7 @@
 	margin-top: 36px;
 	transition-duration: 0.2s;
 	transition-property: border-color;
-	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .items-list-no-border {
@@ -133,6 +133,13 @@
 	}
 }
 
+.listing__room--rates-expanded.listing__room--variable {
+	.room__content--listing {
+		padding-right: 0;
+		width: 100%;
+	}
+}
+
 .room__gallery--listing {
 	margin-top: 36px;
 
@@ -163,10 +170,10 @@
 }
 
 .rate__name--listing {
-    font-size: 11px !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+	font-size: 11px !important;
+	font-weight: 600 !important;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 
 .room__content--listing,
@@ -180,6 +187,13 @@
 .room__details--listing,
 .room__rates--listing {
 	display: none;
+}
+
+.listing__room--rates-expanded {
+	.room__details--listing,
+	.room__rates--listing {
+		display: block;
+	}
 }
 
 .room__actions {
@@ -224,8 +238,8 @@ span.rate__price--listing {
 	font-size: 14px;
 
 	&:after {
-		font-family: 'uncodeicon';
-		content: '\f105';
+		font-family: "uncodeicon";
+		content: "\f105";
 		margin-left: 9px;
 		position: relative;
 		top: 1px;
@@ -293,18 +307,16 @@ span.rate__price--listing {
 }
 
 .guests-quantity {
-
 	margin-left: auto;
 
 	select {
 		display: inline-block;
-    	margin-left: 9px;
-    	width: 100px;
-    	max-width: 100px;
-    	min-width: 100px;
+		margin-left: 9px;
+		width: 100px;
+		max-width: 100px;
+		min-width: 100px;
 	}
 }
-
 
 .room-extras__title {
 	font-size: 16px !important;
@@ -339,7 +351,7 @@ span.rate__price--listing {
 }
 
 .room-extra__info {
-	font-size: .9em;
+	font-size: 0.9em;
 	font-style: italic;
 }
 
