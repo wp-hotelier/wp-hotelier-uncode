@@ -3,7 +3,7 @@
  * Core functions.
  *
  * @author   Benito Lopez <hello@lopezb.com>
- * @version  1.0.0
+ * @version  1.4.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -108,3 +108,13 @@ function uncode_populate_room_object() {
 
 	return $room;
 }
+
+/**
+ * Allow Uncode galleries on rooms.
+ */
+function htl_uncode_gallery_attachments_accepted_pts( $cpts ) {
+	$cpts[] = 'room';
+
+	return $cpts;
+}
+add_filter( 'uncode_gallery_attachments_accepted_pts', 'htl_uncode_gallery_attachments_accepted_pts' );
